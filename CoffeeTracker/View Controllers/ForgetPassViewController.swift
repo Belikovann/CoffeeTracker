@@ -9,21 +9,29 @@ import UIKit
 
 class ForgetPassViewController: UIViewController {
 
+    @IBOutlet var emailTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func restorePassButtonTapped() {
+        
+        emailTF.text!.isEmpty
+        ? showAlert(withTitle: "Незаполнено обязательное поле", andMessage: "Пожалуйста, введите Ваш емайл."
+        )
+        : showAlert(withTitle: " Пароль успешно отправлен", andMessage: "Пожалуйста, проверьте эл. почту."
+        )
     }
-    */
 
+
+}
+
+extension ForgetPassViewController {
+    func showAlert(withTitle title: String, andMessage message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alert, animated: true)
+    }
 }

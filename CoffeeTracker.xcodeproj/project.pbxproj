@@ -63,10 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				C806EF0229D08F05003AE7FA /* Models */,
-				C806EF0529D08F3C003AE7FA /* App */,
 				C806EF0329D08F11003AE7FA /* View Controllers */,
 				C806EF0429D08F28003AE7FA /* Stroryboard */,
+				C806EF0C29D0CFEE003AE7FA /* Views */,
+				C806EF0D29D0CFF5003AE7FA /* Networking */,
 				C806EEF729D08EF8003AE7FA /* Assets.xcassets */,
+				C806EF0529D08F3C003AE7FA /* App */,
 			);
 			path = CoffeeTracker;
 			sourceTree = "<group>";
@@ -106,6 +108,20 @@
 				C806EEFC29D08EF8003AE7FA /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C806EF0C29D0CFEE003AE7FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C806EF0D29D0CFF5003AE7FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
