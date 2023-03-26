@@ -13,6 +13,9 @@
 		C806EEF629D08EF6003AE7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C806EEF429D08EF6003AE7FA /* Main.storyboard */; };
 		C806EEF829D08EF8003AE7FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C806EEF729D08EF8003AE7FA /* Assets.xcassets */; };
 		C806EEFB29D08EF8003AE7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C806EEF929D08EF8003AE7FA /* LaunchScreen.storyboard */; };
+		C806EF0729D0CB74003AE7FA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806EF0629D0CB74003AE7FA /* SignUpViewController.swift */; };
+		C806EF0929D0CB98003AE7FA /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806EF0829D0CB97003AE7FA /* ForgetPassViewController.swift */; };
+		C806EF0B29D0CBFF003AE7FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806EF0A29D0CBFF003AE7FA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C806EEF729D08EF8003AE7FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C806EEFA29D08EF8003AE7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C806EEFC29D08EF8003AE7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C806EF0629D0CB74003AE7FA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C806EF0829D0CB97003AE7FA /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
+		C806EF0A29D0CBFF003AE7FA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		C806EEED29D08EF6003AE7FA /* CoffeeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				C806EEEE29D08EF6003AE7FA /* AppDelegate.swift */,
-				C806EEF029D08EF6003AE7FA /* SceneDelegate.swift */,
-				C806EEF229D08EF6003AE7FA /* ViewController.swift */,
-				C806EEF429D08EF6003AE7FA /* Main.storyboard */,
+				C806EF0229D08F05003AE7FA /* Models */,
+				C806EF0529D08F3C003AE7FA /* App */,
+				C806EF0329D08F11003AE7FA /* View Controllers */,
+				C806EF0429D08F28003AE7FA /* Stroryboard */,
 				C806EEF729D08EF8003AE7FA /* Assets.xcassets */,
-				C806EEF929D08EF8003AE7FA /* LaunchScreen.storyboard */,
-				C806EEFC29D08EF8003AE7FA /* Info.plist */,
 			);
 			path = CoffeeTracker;
+			sourceTree = "<group>";
+		};
+		C806EF0229D08F05003AE7FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C806EF0329D08F11003AE7FA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C806EEF229D08EF6003AE7FA /* ViewController.swift */,
+				C806EF0629D0CB74003AE7FA /* SignUpViewController.swift */,
+				C806EF0829D0CB97003AE7FA /* ForgetPassViewController.swift */,
+				C806EF0A29D0CBFF003AE7FA /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C806EF0429D08F28003AE7FA /* Stroryboard */ = {
+			isa = PBXGroup;
+			children = (
+				C806EEF429D08EF6003AE7FA /* Main.storyboard */,
+				C806EEF929D08EF8003AE7FA /* LaunchScreen.storyboard */,
+			);
+			path = Stroryboard;
+			sourceTree = "<group>";
+		};
+		C806EF0529D08F3C003AE7FA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C806EEEE29D08EF6003AE7FA /* AppDelegate.swift */,
+				C806EEF029D08EF6003AE7FA /* SceneDelegate.swift */,
+				C806EEFC29D08EF8003AE7FA /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C806EF0B29D0CBFF003AE7FA /* LoginViewController.swift in Sources */,
 				C806EEF329D08EF6003AE7FA /* ViewController.swift in Sources */,
 				C806EEEF29D08EF6003AE7FA /* AppDelegate.swift in Sources */,
+				C806EF0729D0CB74003AE7FA /* SignUpViewController.swift in Sources */,
 				C806EEF129D08EF6003AE7FA /* SceneDelegate.swift in Sources */,
+				C806EF0929D0CB98003AE7FA /* ForgetPassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoffeeTracker/Info.plist;
+				INFOPLIST_FILE = CoffeeTracker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.CoffeeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZU3FM55GA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoffeeTracker/Info.plist;
+				INFOPLIST_FILE = CoffeeTracker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.CoffeeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
