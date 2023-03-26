@@ -14,15 +14,17 @@ class ForgetPassViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func restorePassButtonTapped() {
         
         emailTF.text!.isEmpty
-        ? showAlert(withTitle: "Незаполнено обязательное поле", andMessage: "Пожалуйста, введите Ваш емайл."
+        ? showAlert(withTitle: "Незаполнено обязательное поле",
+                    andMessage: "Пожалуйста, введите Ваш емайл."
         )
-        : showAlert(withTitle: " Пароль успешно отправлен", andMessage: "Пожалуйста, проверьте эл. почту."
+        : showAlert(withTitle: " Пароль успешно отправлен",
+                    andMessage: "Пожалуйста, проверьте эл. почту."
         )
     }
 
@@ -33,5 +35,6 @@ extension ForgetPassViewController {
     func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         present(alert, animated: true)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
     }
 }
